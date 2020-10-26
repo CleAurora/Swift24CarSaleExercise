@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bFq-br-DQu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contatos-->
+        <scene sceneID="xbX-pZ-nH5">
+            <objects>
+                <viewController id="V7q-oF-sEn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eh1-VI-f6S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ZFi-Ce-boM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Contatos" id="fbE-MH-aAn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KuI-If-Y7g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="97"/>
+        </scene>
+        <!--Carros-->
+        <scene sceneID="f9Q-k2-dl7">
+            <objects>
+                <viewController id="mUr-1R-N4q" customClass="CarViewController" customModule="CarSale" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pJv-dZ-BmR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vTG-Sg-3Mg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarViewCell" id="CEo-N4-vow" customClass="CarViewCell" customModule="CarSale" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CEo-N4-vow" id="kTA-9Z-HHN">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="io6-M3-Kwa">
+                                                    <rect key="frame" x="36" y="27" width="342" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="io6-M3-Kwa" firstAttribute="top" secondItem="kTA-9Z-HHN" secondAttribute="topMargin" constant="16" id="M89-6m-4ZW"/>
+                                                <constraint firstItem="io6-M3-Kwa" firstAttribute="leading" secondItem="kTA-9Z-HHN" secondAttribute="leadingMargin" constant="16" id="ikJ-6K-0il"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="io6-M3-Kwa" secondAttribute="trailing" constant="16" id="pTy-mg-n4I"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="io6-M3-Kwa" secondAttribute="bottom" constant="16" id="uhF-Hn-dTP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="io6-M3-Kwa" id="Gi7-Ha-PIH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nRR-E7-8EY"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="vTG-Sg-3Mg" firstAttribute="leading" secondItem="nRR-E7-8EY" secondAttribute="leading" id="8bb-hR-eHo"/>
+                            <constraint firstItem="nRR-E7-8EY" firstAttribute="bottom" secondItem="vTG-Sg-3Mg" secondAttribute="bottom" id="ABX-vG-hc8"/>
+                            <constraint firstItem="vTG-Sg-3Mg" firstAttribute="top" secondItem="nRR-E7-8EY" secondAttribute="top" id="X75-0y-tlA"/>
+                            <constraint firstItem="nRR-E7-8EY" firstAttribute="trailing" secondItem="vTG-Sg-3Mg" secondAttribute="trailing" id="c0x-K9-seP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Carros" id="JVw-42-9CU"/>
+                    <connections>
+                        <outlet property="tableView" destination="vTG-Sg-3Mg" id="ahY-ya-9is"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amO-gL-QiY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="-510"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="raU-sY-zur">
+            <objects>
+                <tabBarController id="bFq-br-DQu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tbm-Oh-CfK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mUr-1R-N4q" kind="relationship" relationship="viewControllers" id="dre-bG-du9"/>
+                        <segue destination="V7q-oF-sEn" kind="relationship" relationship="viewControllers" id="Xgx-Xy-cdd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NES-Wx-vgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1397" y="-207"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CarSale" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
